@@ -1,0 +1,15 @@
+.mod-overview-intro__content {
+    position: relative;
+    z-index: 3;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px 10px 0 10px;
+    color: #fff;
+    overflow: hidden;
+}

@@ -1,0 +1,44 @@
+<ion-menu side="start" menuId="first" contentId="main">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <span><img src="assets/icon/iconoAdcommerce.png" width="26" height="2"></span>
+      <span class="headerBarratxt">ADCOMMERCE</span>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-menu-toggle auto-hide="false">
+        <ion-item [routerDirection]="'root'" [routerLink]="'/home'">
+          <ion-icon slot="start" [name]="'home'"></ion-icon>
+          <ion-label>
+            Página principal
+          </ion-label>
+        </ion-item>
+        <ion-item [routerDirection]="'root'" [routerLink]="'/supermercado'">
+          <ion-icon slot="start" [name]="'cart'"></ion-icon>
+          <ion-label>
+            Supermercado
+          </ion-label>
+        </ion-item>
+        <ion-item [routerDirection]="'root'" [routerLink]="'/cesta'">
+          <ion-icon slot="start" [name]="'basket'"></ion-icon>
+          <ion-label>
+            Mi cesta
+          </ion-label>
+        </ion-item>
+        <ion-item [routerDirection]="'root'" [routerLink]="'/micesta'">
+          <ion-icon slot="start" [name]="'bookmarks'"></ion-icon>
+          <ion-label>
+            Nuestras recomendaciones
+          </ion-label>
+        </ion-item>
+        <ion-item [routerDirection]="'root'" [routerLink]="'/contacta-nosotros'">
+          <ion-icon slot="start" [name]="'chatbubbles'"></ion-icon>
+          <ion-label>
+            Contacta con nosotros!
+          </ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+  </ion-content>
+</ion-menu>

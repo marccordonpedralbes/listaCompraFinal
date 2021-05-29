@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button routerLink= "/login" color= "primary">
+          <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="header">
+    <h1>Regístrate</h1>
+    <img src="assets/icon/iconoAdcommerce.png" alt="">
+  </div>
+  <form id="form">
+    <ion-input type="text"  placeholder="Introduce tu nombre"></ion-input>
+    <ion-input type="text"  placeholder="Introduce tu apellido"></ion-input>
+    <ion-input type="text" placeholder="Introduce un nombre de usuario"></ion-input>
+    <ion-input type="text"  placeholder="Introduce tu email"></ion-input>
+    <ion-input type="password" placeholder="Introduce tu contraseña"></ion-input>
+    <ion-input type="text" placeholder="Vuelve a introducir la contraseña"></ion-input>
+    <ion-button expand="block" shape="round" (click)="onRegister()">REGÍSTRATE</ion-button>
+
+  </form>
+  <p>Recuerda: Al registrarte, aceptas todos nuestros <br />términos y condiciones de seguridad.</p>
+  <hr size="5px" color=black width="75%"/>
+  <p id="adcommerce">© 2021. Powered by <a href="https://www.adcommerce.com/">Adcommerce.com</a> with <ion-icon name="heart"></ion-icon></p>
+</ion-content>

@@ -1,0 +1,127 @@
+ <ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-menu-button color="warning" menu="first"></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Menú principal</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <h1 style="text-align: center">Bienvenido de nuevo</h1>
+    <p style="text-align: center">Antes de comenzar le recomendamos que realice el formulario que encontrará en el apartado de contacta con nosotros, para disfrutar al máximo las ventajas de nuestra aplicación.</p>
+    
+    <ion-card id="cardInicial">
+      <ion-card-header>
+        <ion-card-subtitle>CONÓCENOS</ion-card-subtitle>
+        <ion-card-title>Adcommerce, el supermercado más cercano a tus necesidades</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        <img src="assets/icon/iconoAdcommerce.png" alt="">
+        Conoce las ventajas de usar la nueva aplicación para hacer la compra desde casa, que se adaptará a tus necesidades de salud y además buscará usar los productos que ya dispongas en tu casa.
+      </ion-card-content>
+    </ion-card>
+    <ion-card id="cardOfertaSalmon">
+      <ion-card-header>
+        <ion-card-subtitle>OFERTA</ion-card-subtitle>
+        <ion-card-title>Salmon Pescanova, compra 2 y llévate 3. AHORA POR TIEMPO LIMITADO</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        <img src="assets/icon/salmon.jpg" alt="">
+        Procedente de Noruega. Ultracongelado para mantener sus propiedades intactas.
+        Los centros de salmón constituyen un excelente alimento para toda la familia, gracias a sus propiedades nutritivas y a su contenido en ácidos grasos Omega 3.
+        Puede consultar más información en <mark>MIS RECOMENDACIONES</mark>.
+      </ion-card-content>
+    </ion-card>
+    <ion-card id="cardOfertaArroz">
+      <ion-card-header>
+        <ion-card-subtitle>OFERTA</ion-card-subtitle>
+        <ion-card-title>Arroz integral orgánico CAROLINA. Ahora la segunda unidad al 50%.</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        <img src="assets/icon/arroz.png" alt="">
+        Nuestro arroz 100% integral, cultivado orgánicamente, es el arroz perfecto para todas tus comidas favoritas. 
+        Nuestro arroz funciona de manera complementaria a una amplia variedad de necesidades dietéticas, incluyendo Sin Gluten, Kosher, Vegano y Vegetariano. 
+        Puede consultar más información en <mark>MIS RECOMENDACIONES</mark>.
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card id="cardOfertaAceite">
+      <ion-card-header>
+        <ion-card-subtitle>OFERTA</ion-card-subtitle>
+        <ion-card-title>Aceite de oliva ecológico. <b>Ahora por tan sólo 9.75€</b></ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        <img src="assets/icon/aceite.jpg" alt="">
+        Aceite 100% nautral y ecológico. Con denominación de origen protegida, aceite de La Rioja. Aprende a disfrutar del mejor sabor del aceite con además sus beneficios sobre la salud. Más información en <mark>MIS RECOMENDACIONES</mark>.
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card id="cardOfertaHuevos">
+      <ion-card-header>
+        <ion-card-subtitle>OFERTA</ion-card-subtitle>
+        <ion-card-title>Huevos ecológicos Granja San Miguel, antes por <del>5,50€</del> ,<b> ahora por tan sólo 4.50€</b></ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        <img src="assets/icon/huevos.jpg" alt="">
+        GRANJA SAN MIGUEL. Docena de huevos BIO. Más información en <mark>MIS RECOMENDACIONES</mark>.
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card id="cardPlataformas">
+      <ion-card-header>
+        <ion-card-subtitle>NOVEDADES</ion-card-subtitle>
+        <ion-card-title>Aplicación ya disponible para Android, IOS y Microsoft. </ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        <img src="assets/icon/plataformas.jpg" alt="">
+        Nuestra nueva aplicación ya consta con soporte en las 3 principales plataformas de móvil. Totalmente gratuita y con un acceso limitado a la versión Premium. Más información en <a href="www.adcommerce.com">Adcommerce</a>.
+      </ion-card-content>
+    </ion-card>
+    <ion-card id="cardFoot">
+      <ion-card-header>
+        <ion-card-subtitle>IMPORTANTE</ion-card-subtitle>
+        <ion-card-title>Estos productos promocionales, a diferencia de nuestro surtido de artículos permanente, solo están disponibles en cantidades limitadas</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Estos productos sólo están disponibles en catidades limitadas. Por lo que pueden agotarse antes de finalizar la promoción. Más información en <a href="www.adcommerce.com">Adcommerce</a>.
+      </ion-card-content>
+    </ion-card>
+    <app-fab></app-fab>
+  </ion-content>
+
+
+
+  <!-- <ion-list>
+    <ion-item>
+      <ion-text color="secondary">
+        <h2>En esta app encontraras las mejores rebajas y la manera mas rapida de hacer las compras</h2>
+      </ion-text>
+    </ion-item>
+    <ion-item class="imgPrin">
+        <ion-img [src]= "imgPrin"></ion-img>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-text color="secondary">
+      <h2>Pre view de tu lista de la compra</h2>
+    </ion-text>
+    <ion-item *ngFor="let producto of lista">
+      <ion-avatar slot="start">
+        <ion-img [src]="producto.imgProducto"></ion-img>
+      </ion-avatar>
+      <ion-item>
+        <ion-label>
+          {{ producto.nombreProducto }}
+        </ion-label>
+      </ion-item>
+    </ion-item>
+    <ion-item>
+    </ion-item>
+  </ion-list> -->

@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button color="warning" menu="first"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Contacta con nosotros!</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="header-text">
+    <h2 style="text-align: center">Desde Adcommerce nos preucupamos por tus necesidades</h2>
+    <p style="text-align: center">Es por esta razon, que le ofrecemos la opción de completar este breve formulario, que será enviado por email a nuestros especialistas y les recomendaran una serie de recetas y productos totalmente adaptados a tus necesidades y/o gustos. Para comer de una manera saludable y a la vez agradable!</p>
+  </div>
+  <div id="forms">
+    <form id="form">
+      <ion-input type="text"  placeholder="Introduce tu edad"></ion-input>
+      <ion-input type="text"  placeholder="Introduce tu peso"></ion-input>
+      <ion-input type="text" placeholder="Introduce tu altura"></ion-input>
+      <ion-item>
+        <ion-label>Género</ion-label>
+        <ion-select placeholder="Select One">
+          <ion-select-option value="f">Hombre</ion-select-option>
+          <ion-select-option value="m">Mujer</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>Qué objetivo te gustaría conseguir?</ion-label>
+        <ion-select placeholder="Select One">
+          <ion-select-option value="pd">Perder grasa</ion-select-option>
+          <ion-select-option value="t">Tonificar</ion-select-option>
+          <ion-select-option value="smm">Subir masa muscular</ion-select-option>
+          <ion-select-option value="rd">Rendimiento deportivo</ion-select-option>
+          <ion-select-option value="ms">Mantenerme saludable</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>Haces ejercicio?</ion-label>
+        <ion-select placeholder="Select One">
+          <ion-select-option value="s">Si,con moderación</ion-select-option>
+          <ion-select-option value="sm">Si,con intensidad</ion-select-option>
+          <ion-select-option value="n">No</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>Te gustaría saber tu evolución cada 15 días y analizar tus progresos con un especialista en nutrición?</ion-label>
+        <ion-select placeholder="Select One">
+          <ion-select-option value="s">Si</ion-select-option>
+          <ion-select-option value="n">No</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>Puedes cocinar y preparate los alimentos en tu día a día?</ion-label>
+        <ion-select placeholder="Select One">
+          <ion-select-option value="s">Si, me suelo preparar la comida</ion-select-option>
+          <ion-select-option value="n">No, no tengo tiempo ni me apetece cocinar</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>Padeces alguna patología, enfermedad o intolerancia alimentaria?</ion-label>
+        <ion-select placeholder="Select One">
+          <ion-select-option value="s">Si, cual;</ion-select-option>
+          <ion-select-option value="n">No</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-input type="text"  placeholder="Patología, enfermedad o intolerancia (*)"></ion-input>
+      <div id="extra">
+        <ion-input type="text"  placeholder="Quieres contarnos algo más?"></ion-input>
+      </div>
+      <ion-button expand="block" shape="round" (click)="onSubmit()">ENVIAR</ion-button>
+    </form>
+  </div>
+</ion-content>

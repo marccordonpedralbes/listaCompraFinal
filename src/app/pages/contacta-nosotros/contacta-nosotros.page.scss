@@ -1,0 +1,52 @@
+ion-content {
+    --background: url(../../../assets/icon/fondoContact.jpg) no-repeat center / cover fixed;
+  #header-text {
+    h2 {
+      font-size: 1.75em;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
+    p {
+      font-size: 70%;
+    }
+  }
+  #forms{
+      margin-top: 10%;
+      padding-left: 30px;
+      padding-right: 30px;
+      
+      ion-input{
+         background: #eceef3;
+         display: flow-root;
+         margin-top: 15px;
+         border-radius: 50px;
+         box-shadow: 1px 8px 8px 0px;
+      }
+      ion-item{
+        background: #eceef3;
+        display: flow-root;
+        margin-top: 15px;
+        border-radius: 50px;
+        box-shadow: 1px 8px 8px 0px;
+     }
+     #extra{
+       ion-input{
+        background: #eceef3;
+        size: 125%;
+        display: flow-root;
+        margin-top: 15px;
+        border-radius: 50px;
+        box-shadow: 1px 8px 8px 0px;
+       }
+     }
+
+      ion-button{
+          margin-top: 40px;
+          height: 48px;
+          font-size: 18px;
+          text-transform: initial;
+          border-radius: 50px;
+          box-shadow: 1px 8px 8px 0px;
+          
+      }
+  }
+}

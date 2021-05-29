@@ -1,0 +1,109 @@
+h1{
+  font-size: 3em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p{
+  font-size: 75%;
+  color: rgb(121, 121, 121);
+}
+#cardInicial{
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(157, 218, 149);
+  img{
+    width: 150px; 
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+}
+#cardOfertaSalmon{
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(235, 210, 102);
+  ion-card-title{
+    font-weight: bold;
+  }
+  ion-card-subtitle{
+    color: red;
+    font-size: 1.5em;
+  }
+  img{
+    width: 220px; 
+    height: 220px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+}
+  #cardOfertaArroz{
+    border: 1px solid rgb(0, 0, 0);
+    ion-card-title{
+      font-weight: bold;
+    }
+    ion-card-subtitle{
+      font-size: 1.5em;
+    }
+    img{
+      width: 200px; 
+      height: 200px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 15px;
+    }
+  }
+  #cardOfertaAceite{
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(235, 210, 102);
+    ion-card-title{
+      font-weight: bold;
+    }
+    ion-card-subtitle{
+      color: red;
+      font-size: 1.5em;
+    }
+    img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 15px;
+    }
+  }
+  #cardOfertaHuevos{
+    border: 1px solid rgb(0, 0, 0);
+    ion-card-title{
+      font-weight: bold;
+    }
+    ion-card-subtitle{
+      color: red;
+      font-size: 1.5em;
+    }
+    img{
+      display: block;
+      width: 250px; 
+      height: 250px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 15px;
+    }
+  }
+  #cardPlataformas{
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(157, 218, 149);
+    img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 15px;
+    }
+  }
+  #cardFoot{
+    ion-card-title{
+      color: grey;
+    }
+    border: 1px solid rgb(255, 0, 0);
+    background-color: rgb(65, 71, 65);
+    color: grey;
+  }

@@ -1,2 +1,2 @@
 # listaCompra-Ionic
-app de una lista d ela compra con ionic
+app de una lista de la compra con ionic

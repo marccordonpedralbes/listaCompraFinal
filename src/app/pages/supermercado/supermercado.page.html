@@ -7,5 +7,9 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
-  <app-fab></app-fab>
+  <ion-card *ngFor="let post of products">
+    <img src={{post.imgUrl}} alt="">
+    <ion-card-title>{{post.nombre}}</ion-card-title>
+    <ion-button (click)="comprar(post.id)">Comprar</ion-button>
+  </ion-card>
 </ion-content>

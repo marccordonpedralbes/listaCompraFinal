@@ -5,7 +5,6 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
-import { FabComponent } from 'src/app/components/fab/fab.component';
 
 
 @NgModule({
@@ -17,7 +16,6 @@ import { FabComponent } from 'src/app/components/fab/fab.component';
   ],
   declarations: [
     HomePage,
-    FabComponent,
   ]
 })
 export class HomePageModule {}

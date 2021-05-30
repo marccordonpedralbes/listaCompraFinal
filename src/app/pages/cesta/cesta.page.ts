@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from 'src/app/interface/product';
+import { PostServiceService } from 'src/app/service/post-service.service';
 
 @Component({
   selector: 'app-cesta',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CestaPage implements OnInit {
 
-  constructor() { }
+  cesta: Product[];
+
+  constructor(public postServices:PostServiceService) {
+    this.cesta = []
+   }
 
   ngOnInit() {
+    this.cesta = this.postServices.getCesta();
   }
 
+  comprarTodo(){
+    this.postServices.compraRealizada();
+    this.cesta = this.postServices.getCesta();
+  }
 }

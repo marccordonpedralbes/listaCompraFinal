@@ -8,6 +8,7 @@ import { MenuComponent } from 'src/app/components/menu/menu.component'
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FabComponent } from './components/fab/fab.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { FabComponent } from './components/fab/fab.component';
     FabComponent,
   ],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

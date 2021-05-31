@@ -13,7 +13,9 @@ export class RecomendacionesPage implements OnInit {
   recipes: Recipe[]
   cesta: Product[]
   posiblesRecipes: Recipe[]
-  constructor(public postServices:PostServiceService) {   }
+  constructor(public postServices:PostServiceService) {  
+    this.posiblesRecipes = [];
+   }
 
    async ngOnInit() {
      this.cesta = this.postServices.getCesta();
@@ -21,5 +23,23 @@ export class RecomendacionesPage implements OnInit {
       (respuesta) => {
           this.recipes = respuesta.results;
         });
+        
       }
+
+      obtener(){
+        let numeroProductos: number = 0;
+        for(let recipe of this.recipes){
+          for(let cosas of recipe.ingredientes){
+            for(let cestaIngrediente of this.cesta){
+              if(cestaIngrediente.nombre === cosas.nombre){
+                numeroProductos++;
+              }
+            }
+          }
+          if(numeroProductos === recipe.ingredientes.length)
+            this.posiblesRecipes.push(recipe)
+          numeroProductos = 0;
+        }
+      }
+
 }

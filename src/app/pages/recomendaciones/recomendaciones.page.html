@@ -8,8 +8,7 @@
 </ion-header>
 
 <ion-content>
-  <ion-card *ngFor="let recipe of posiblesRecipes">
+  <ion-card *ngFor="let recipe of recipes">
     <img src={{recipe.recipeUrl}} alt="">
-    <ion-card-title>{{recipe.nombre}}</ion-card-title>
   </ion-card>
 </ion-content>

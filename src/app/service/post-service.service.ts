@@ -29,7 +29,7 @@ export class PostServiceService {
     }
   }
 
-  añadirCompra(id: string, productos: Product[]){
+  addCompra(id: string, productos: Product[]){
     var aux = true;
     let num: number;
     for(let producto of productos){

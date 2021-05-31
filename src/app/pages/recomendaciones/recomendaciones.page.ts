@@ -13,23 +13,13 @@ export class RecomendacionesPage implements OnInit {
   recipes: Recipe[]
   cesta: Product[]
   posiblesRecipes: Recipe[]
-  constructor(public postServices:PostServiceService) {
-    this.recipes = [];
-    this.cesta = [];
-    this.posiblesRecipes = [];
-   }
+  constructor(public postServices:PostServiceService) {   }
 
    async ngOnInit() {
+     this.cesta = this.postServices.getCesta();
     this.postServices.getRecipes().then(
       (respuesta) => {
           this.recipes = respuesta.results;
-          this.cesta = this.postServices.getCesta();
-          for (let recipe of this.recipes){
-            if(recipe.ingredientes === this.cesta){
-              this.posiblesRecipes.push(recipe);
-            }
-          }
-      });
-  }
-
+        });
+      }
 }

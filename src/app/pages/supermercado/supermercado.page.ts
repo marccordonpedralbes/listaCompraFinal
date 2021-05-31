@@ -30,7 +30,7 @@ export class SupermercadoPage implements OnInit {
   }
 
   comprar(id: string){
-    this.postServices.añadirCompra(id, this.products);
+    this.postServices.addCompra(id, this.products);
   }
 
   filtrar(filtrado: string){

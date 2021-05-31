@@ -64,8 +64,10 @@ export class PostServiceService {
     return this.cesta
   }
 
-  compraRealizada(){
-    this.cesta = [];
+  consumir(nombre: string){
+    this.cesta = this.cesta.filter(list => {
+      return list.nombre !== nombre
+    })
   }
 
 }

@@ -1,21 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+
 import { IonicModule } from '@ionic/angular';
 
-import { SupermercadoPageRoutingModule } from './supermercado-routing.module';
+import { RecomendacionesPageRoutingModule } from './recomendaciones-routing.module';
 
-import { SupermercadoPage } from './supermercado.page';
+import { RecomendacionesPage } from './recomendaciones.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    SupermercadoPageRoutingModule
+    RecomendacionesPageRoutingModule
   ],
-  declarations: [
-    SupermercadoPage,
-  ]
+  declarations: [RecomendacionesPage]
 })
-export class SupermercadoPageModule {}
+export class RecomendacionesPageModule {}

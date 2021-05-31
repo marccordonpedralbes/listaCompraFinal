@@ -5,9 +5,15 @@
     </ion-buttons>
     <ion-title>Supermercado</ion-title>
   </ion-toolbar>
+  <ion-button (click)="filtrar('Carne')">Carne</ion-button>
+  <ion-button (click)="filtrar('Fruta')">Fruta</ion-button>
+  <ion-button (click)="filtrar('Pescado')">Pescado</ion-button>
+  <ion-button (click)="filtrar('Hortalizas')">Hortalizas</ion-button>
+  <ion-button (click)="filtrar('Limpieza')">Limpieza</ion-button>
+  <ion-button (click)="quitar()">Quitar</ion-button>
 </ion-header>
 <ion-content>
-  <ion-card *ngFor="let post of products">
+  <ion-card *ngFor="let post of productsFilter">
     <img src={{post.imgUrl}} alt="">
     <ion-card-title>{{post.nombre}}</ion-card-title>
     <ion-button (click)="comprar(post.id)">Comprar</ion-button>

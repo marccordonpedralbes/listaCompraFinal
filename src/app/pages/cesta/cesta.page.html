@@ -12,8 +12,8 @@
     <img src={{post.imgUrl}} alt="">
     <ion-card-title>{{post.nombre}}</ion-card-title>
     <ion-card-title>{{post.cantidad}}</ion-card-title>
+    <ion-button (click)="consumir(post.nombre)"> consumir</ion-button>
   </ion-card>
-  <ion-button (click)="comprarTodo()"> Realizar compra</ion-button>
   <div class="mod-overview-intro__content">
     <h1 class="heading-secondary-h2">Lista de la compra</h1>
   </div>

@@ -19,8 +19,8 @@ export class CestaPage implements OnInit {
     this.cesta = this.postServices.getCesta();
   }
 
-  comprarTodo(){
-    this.postServices.compraRealizada();
+  consumir(nombre: string){
+    this.postServices.consumir(nombre);
     this.cesta = this.postServices.getCesta();
   }
 }

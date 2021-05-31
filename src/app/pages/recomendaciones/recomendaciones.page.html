@@ -1,0 +1,15 @@
+<ion-header>
+<ion-toolbar color="primary">
+  <ion-buttons slot="start">
+    <ion-menu-button color="warning" menu="first"></ion-menu-button>
+  </ion-buttons>
+  <ion-title>Nuestras recomendaciones</ion-title>
+</ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let recipe of posiblesRecipes">
+    <img src={{recipe.recipeUrl}} alt="">
+    <ion-card-title>{{recipe.nombre}}</ion-card-title>
+  </ion-card>
+</ion-content>

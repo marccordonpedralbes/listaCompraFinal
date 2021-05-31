@@ -34,7 +34,11 @@ const routes: Routes = [
   {
     path: 'contacta-nosotros',
     loadChildren: () => import('./pages/contacta-nosotros/contacta-nosotros.module').then( m => m.ContactaNosotrosPageModule)
+  },  {
+    path: 'recomendaciones',
+    loadChildren: () => import('./pages/recomendaciones/recomendaciones.module').then( m => m.RecomendacionesPageModule)
   }
+
 ];
 
 @NgModule({
